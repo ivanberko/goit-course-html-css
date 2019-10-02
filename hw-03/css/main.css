@@ -8,15 +8,17 @@ body {
   font-family: 'Playfair Display', serif;
   font-size: 14px;
   color: #626262;
-  margin: 0 auto;
 }
 
-.wrapper,
 .nav {
   width: 900px;
   margin: 0 auto;
+  padding-top: 72px;
+  padding-bottom: 100px;
 }
 .wrapper {
+  width: 900px;
+  margin: 0 auto;
   margin-bottom: 50px;
 }
 
@@ -24,7 +26,7 @@ body {
   list-style: none;
   text-transform: uppercase;
   line-height: 24px;
-  margin: 72px 150px 100px;
+  margin: 0 150px;
   padding: 0;
   font-size: 0;
 }
@@ -57,7 +59,7 @@ body {
   font-size: 0;
 }
 
-.wrapper__list__item h3 {
+.list__item h3 {
   text-transform: uppercase;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
@@ -66,44 +68,41 @@ body {
   margin: 30px 0 24px;
 }
 
-.wrapper__list__item h2 {
+.list__item h2 {
   font-size: 30px;
   font-weight: 400;
   margin: 0 0 26px;
-
 }
 
-.wrapper__list__item p {
+.list__item p {
   line-height: 24px;
   font-weight: 400;
   font-size: 14px;
   margin: 0;
 }
 
-.wrapper__list__item {
+.list__item {
   display: inline-block;
   width: 420px;
   margin-bottom: 128px;
+  vertical-align: top;
 }
 
-.wrapper__list__item:nth-last-child(-n + 2) {
+.list__item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 
-.wrapper__list__item:nth-of-type(2n+1) {
+.list__item:nth-of-type(2n+1) {
   margin-right: 60px;
 }
 
 .button {
-  width: 164px;
-  height: 60px;
   margin: 0 auto;
   margin-bottom: 70px;
+  text-align: center;
 }
 
 button {
-  width: 164px;
-  height: 60px;
   border: 1px solid #626262;
   background-color: #fff;
   font-size: 20px;
@@ -112,8 +111,8 @@ button {
   color: #626262;
   cursor: pointer;
   outline: 0;
-  padding: 0;
   transition: .2s;
+  padding: 17px 32px;
 }
 
 button:hover,
