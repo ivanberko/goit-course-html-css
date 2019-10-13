@@ -283,7 +283,7 @@ main {
 }
 
 .item-menu a:nth-child(2) {
-  margin: 0 8px;
+  margin: 0 8px 8px;
   background-image: url(../img/icon/change.png);
 }
 
@@ -296,6 +296,7 @@ main {
   color: #ffffff;
   font-family: "Open Sans";
   font-size: 14px;
+  padding: 0;
   width: 166px;
   line-height: 50px;
   border: 1px solid #ffffff;
