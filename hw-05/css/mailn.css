@@ -107,6 +107,7 @@ main {
 
 .slider {
   height: 600px;
+  min-width: 100%;
   background: linear-gradient(to right, rgba(0,0,2,.52), rgba(0,0,2,.52)), url(../img/bg-main.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -114,49 +115,48 @@ main {
   margin-bottom: 96px;
 }
 
-.slider-arrow {
+.slider-ctrl {
   padding: 0 164px;
   transform: translateY(200px);
 }
 
-.arrow-left::before {
-  content: "";
+.slider-arrow {
   position: absolute;
+  top: 12px;
+  display: inline-block;
+  width: 104px;
+  height: 104px;
+  background-color: #4ec6ab;
+  opacity: 0.65;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.slider-arrow-left {
   left: 0;
-  top: 12px;
-  display: inline-block;
-  width: 104px;
-  height: 104px;
-  background-color: #4ec6ab;
-  opacity: 0.65;
   background-image: url(../img/icon/left.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
 }
 
-.arrow-right::after {
-  content: "";
-  position: absolute;
-  top: 12px;
+.slider-arrow-right {
   right: 0;
-  display: inline-block;
-  width: 104px;
-  height: 104px;
-  background-color: #4ec6ab;
-  opacity: 0.65;
   background-image: url(../img/icon/right.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
 }
 
-.arrow-left:hover::before,
-.arrow-right:hover::after {
+.slider-arrow-right:hover,
+.slider-arrow-left:hover {
   opacity: 1;
 }
 
-.slider-arrow h3 {
+.slider-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.title {
   color: #ffffff;
   font-size: 60px;
   font-weight: 700;
@@ -164,7 +164,7 @@ main {
   margin: 0 0 26px;
 }
 
-.slider-arrow h4 {
+.subtitle {
   color: #ffffff;
   font-size: 24px;
   font-weight: 300;
