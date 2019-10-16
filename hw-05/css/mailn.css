@@ -48,20 +48,6 @@ body {
   padding-top: 36px;
 }
 
-.site-logo a {
-  color: #555252;
-  font-size: 30px;
-  font-weight: 300;
-  line-height: 32px;
-  text-transform: uppercase;
-  text-decoration: none;
-}
-
-.site-logo:first-letter {
-  color: #1abc9c;
-  font-weight: 900;
-}
-
 .nav-list {
   float: right;
   list-style-type: none;
