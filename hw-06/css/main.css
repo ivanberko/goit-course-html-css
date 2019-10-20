@@ -101,12 +101,13 @@ header .container {
   text-align: center;
 }
 
-.section-title p {
+.section-title h2 span {
   color: #333333;
   font-family: "Kaushan Script";
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 22px;
+  text-transform: none;
 }
 
 .section-title h2 {
@@ -197,11 +198,7 @@ header .container {
   margin-bottom: 82px;
 }
 
-.section-title .desc {
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: #999999;
+.desc-width {
   width: 940px;
   margin: 0 auto;
   margin-bottom: 92px;
@@ -268,6 +265,7 @@ header .container {
   margin-right: 1px;
   background: #fce38a url(../img/socials/facebook.png) no-repeat center;
   transition: background-color 0.2s linear;
+  outline: none;
 }
 
 .item-hover-social:nth-child(2) {
@@ -282,7 +280,8 @@ header .container {
   background: #fce38a url(../img/socials/instagram.png) no-repeat center;
 }
 
-.item-hover-social:hover {
+.item-hover-social:hover,
+.item-hover-social:focus {
   background-color: #95e1d3;
 }
 
@@ -345,4 +344,9 @@ input[type="email"] {
   font-weight: 700;
   text-transform: uppercase;
   cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+.btn:hover {
+  background-color: #f38181;
 }
