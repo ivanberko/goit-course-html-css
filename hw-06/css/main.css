@@ -208,13 +208,15 @@ header .container {
 }
 
 .team-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   list-style: none;
-  width: 380px;
   text-align: center;
 }
 
-.item-foto {
-  margin-bottom: 30px;
+.team-list-item {
+  width: 380px;
 }
 
 .item-name {
@@ -235,7 +237,9 @@ header .container {
 }
 
 .item-foto {
+  margin-bottom: 30px;
   position: relative;
+  transition: transform 0.2s linear;
 }
 
 /* ----------------ITEM-HOVER---------------------- */
@@ -243,7 +247,7 @@ header .container {
 .item-hover {
   display: flex;
   justify-content: center;
-  align-items:center;
+  align-items: center;
   width: 380px;
   height: 470px;
   background-image: linear-gradient(
@@ -251,7 +255,6 @@ header .container {
     rgba(252, 227, 138, 0.9) 0%,
     rgba(243, 129, 129, 0.9) 100%
   );
-  /* background-color: #95e1d3; */
   position: absolute;
   left: 0;
   opacity: 0;
@@ -283,8 +286,63 @@ header .container {
   background-color: #95e1d3;
 }
 
-.item-hover:hover {
+.item-foto:hover {
+  transform: translate(-10px, -10px);
+}
+
+.item-foto:hover .item-hover {
   opacity: 1;
 }
 
+/* ----------------FOOTER SECTION---------------------- */
 
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 62px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.copy {
+  color: #333333;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.copy span {
+  color: #f38181;
+}
+
+.mail-form {
+  display: flex;
+}
+
+input[type="email"] {
+  width: 230px;
+  height: 40px;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  color: #cccccc;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+  padding: 14px;
+  line-height: 24px;
+  outline: none;
+}
+
+.btn {
+  width: 150px;
+  height: 40px;
+  background-color: #95e1d3;
+  border: none;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
