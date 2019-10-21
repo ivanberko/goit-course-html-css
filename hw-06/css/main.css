@@ -183,6 +183,7 @@ header .container {
   text-transform: uppercase;
   color: #333333;
   margin-bottom: 20px;
+  line-height: 1;
 }
 
 .desc {
