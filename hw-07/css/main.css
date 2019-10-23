@@ -11,7 +11,7 @@ html {
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 932px;
   margin: 0 auto;
 }
 
@@ -83,4 +83,217 @@ input[type="radio"].visually-hidden {
     /* Chrome 26+, Opera 23+, Firefox 39+ */
       url("../fonts/merriweather/merriweather-v21-latin-300italic.woff")
       format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* ----------------HEADER SECTION---------------------- */
+header {
+  min-height: 84px;
+  margin-bottom: 120px;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 84px;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-nav-item a {
+  display: block;
+  padding: 0 20px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: color 0.2s linear;
+}
+
+.site-nav-item:nth-child(1) a {
+  padding-left: 0;
+}
+
+.site-nav-item:last-child a {
+  padding-right: 0;
+}
+
+.site-nav-item a:hover,
+.site-nav-item a:focus {
+  color: #fed136;
+}
+
+
+/* ----------------SERVICES SECTION---------------------- */
+
+.section-title {
+  color: #222222;
+  font-family: "Montserrat";
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.section-subtitle {
+  color: #777777;
+  font-family: "Merriweather";
+  font-size: 16px;
+  font-style: italic;
+  text-transform: none;
+  padding-top: 20px;
+}
+
+.services-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+}
+
+.services-list-item {
+  max-width: 274px;
+  text-align: center;
+}
+
+.services-list-item::before {
+  content: "";
+  display: inline-block;
+  width: 68px;
+  height: 68px;
+  border: 3px solid #fed136;
+  margin-bottom: 26px;
+  border-radius: 50%;
+  background: url(../img/icon/Icon-Basket.svg) no-repeat center;
+}
+
+.services-list-item:nth-child(2)::before {
+  background: url(../img/icon/Icon-Laptop.svg) no-repeat center;
+}
+
+.services-list-item:nth-child(3)::before {
+  background: url(../img/icon/Icon-Locked.svg) no-repeat center;
+}
+
+.item-title {
+  color: #222222;
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.disc {
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* ----------------CONTACT SECTION---------------------- */
+
+.contact {
+  min-height: 676px;
+  background: #222222;
+  position: relative;
+}
+
+.contact .container {
+  min-height: 676px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact .container::before {
+  content: "";
+  display: inline-block;
+  width: 614px;
+  height: 537px;
+  background: url(../img/Map_Image.png) no-repeat center;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  z-index: 0;
+}
+
+form {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.contact-title {
+  color: #ffffff;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+input:last-child {
+  margin-bottom: 0;
+}
+
+.user-name,
+.user-email,
+.user-subject {
+  width: 455px;
+  height: 50px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  border-radius:3px;
+  margin-bottom: 30px;
+  color: #777777;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 20px;
+  outline: none;
+}
+
+.user-name::placeholder,
+.user-email::placeholder,
+.user-subject::placeholder,
+textarea::placeholder {
+  color: #bbbbbb;
+  text-transform: uppercase;
+}
+
+.user-message textarea {
+  display: block;
+  width: 455px;
+  height: 210px;
+  border: 1px solid #cccccc;
+  background-color: #ffffff;
+  border-radius:3px;
+  color: #777777;
+  font-family: "Montserrat";
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 20px;
+  outline: none;
+}
+
+.user-message {
+  margin-bottom: 30px;
 }
