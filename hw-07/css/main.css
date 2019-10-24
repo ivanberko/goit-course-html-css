@@ -11,8 +11,9 @@ html {
 }
 
 .container {
-  max-width: 932px;
+  max-width: 956px;
   margin: 0 auto;
+  padding: 0 0.8rem;
 }
 
 img {
@@ -35,6 +36,8 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
   visibility: hidden;
 }
+
+/* -----------------FONTS------------------------------- */
 
 /* roboto-slab-regular - latin */
 @font-face {
@@ -85,7 +88,6 @@ input[type="radio"].visually-hidden {
       format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-
 /* ----------------HEADER SECTION---------------------- */
 header {
   min-height: 84px;
@@ -110,7 +112,7 @@ header .container {
 
 .site-nav-item a {
   display: block;
-  padding: 0 20px;
+  padding: 0 2rem;
   color: #222222;
   font-family: "Montserrat";
   font-size: 1.4rem;
@@ -133,13 +135,30 @@ header .container {
   color: #fed136;
 }
 
+.logo {
+  animation: logo-appear 0.8s linear;
+}
+
+@keyframes logo-appear {
+  0% {
+    opacity: 0;
+    width: 0;
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+    opacity: 1;
+    width: 79px;
+  }
+}
+
 
 /* ----------------SERVICES SECTION---------------------- */
 
 .section-title {
   color: #222222;
   font-family: "Montserrat";
-  font-size: 40px;
+  font-size: 4rem;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
@@ -149,10 +168,10 @@ header .container {
 .section-subtitle {
   color: #777777;
   font-family: "Merriweather";
-  font-size: 16px;
+  font-size: 1.6rem;
   font-style: italic;
   text-transform: none;
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 .services-list {
@@ -172,8 +191,8 @@ header .container {
 .services-list-item::before {
   content: "";
   display: inline-block;
-  width: 68px;
-  height: 68px;
+  width: 6.8rem;
+  height: 6.8rem;
   border: 3px solid #fed136;
   margin-bottom: 26px;
   border-radius: 50%;
@@ -233,7 +252,6 @@ header .container {
 
 form {
   position: relative;
-  z-index: 2;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -267,19 +285,19 @@ input:last-child {
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: 700;
-  padding: 20px;
+  padding: 2rem;
   outline: none;
 }
 
 .user-name::placeholder,
 .user-email::placeholder,
 .user-subject::placeholder,
-textarea::placeholder {
+.form-message::placeholder {
   color: #bbbbbb;
   text-transform: uppercase;
 }
 
-.user-message textarea {
+.form-message {
   display: block;
   width: 455px;
   height: 210px;
@@ -290,10 +308,47 @@ textarea::placeholder {
   font-family: "Montserrat";
   font-size: 1.4rem;
   font-weight: 700;
-  padding: 20px;
+  padding: 2rem;
   outline: none;
+  resize: none;
 }
 
 .user-message {
   margin-bottom: 30px;
+}
+
+.user-name:required:valid:focus,
+.user-email:required:valid:focus,
+.user-subject:required:valid:focus,
+.form-message:required:valid:focus {
+	border: 2px solid rgba(3, 202, 3, 0.6);
+}
+
+.user-name:required:invalid:focus,
+.user-email:required:invalid:focus,
+.user-subject:required:invalid:focus,
+.form-message:required:invalid:focus {
+	border: 2px solid rgba(255, 0, 0, 0.6);
+}
+
+.btn {
+  margin: auto;
+  min-width: 455px;
+  text-align: center;
+}
+
+.button {
+  min-width: 240px;
+  font-family: "Montserrat";
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 3px;
+  outline: none;
+  background-color: #fed136;
+  color:#ffffff;
+  border: none;
+  line-height: 1;
+  padding: 2.6rem 4.8rem;
+  cursor: pointer;
 }
