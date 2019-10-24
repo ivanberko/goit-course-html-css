@@ -166,6 +166,7 @@ header .container {
 }
 
 .section-subtitle {
+  display: block;
   color: #777777;
   font-family: "Merriweather";
   font-size: 1.6rem;
