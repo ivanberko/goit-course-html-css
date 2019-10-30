@@ -1,14 +1,11 @@
 @media (min-width: 767px) {
+  .banner {
+    min-height: 700px;
+   }
+
   .container {
     max-width: 768px;
     padding: 0 5rem;
-  }
-
-  .banner {
-    background: #1a1915 url(../img/baner-desctop-tablet.png) no-repeat center;
-    width: 768px;
-    min-height: 700px;
-    margin-bottom: 7.2rem;
   }
 
   .header {
@@ -77,13 +74,7 @@
 }
 
 @media (min-width: 1440px) {
-  .banner {
-    background: #1a1915 url(../img/baner-desctop-tablet.png) no-repeat center;
-    background-size: cover;
-    min-width: 100%;
-    min-height: 700px;
-    margin-bottom: 7.2rem;
-  }
+  
   .container {
     max-width: 940px;
     padding: 0;
