@@ -9,7 +9,7 @@
 html {
   font-size: 10px;
   /* font-family: 'Roboto', sans-serif; */
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 img {
@@ -34,7 +34,7 @@ input[type="radio"].visually-hidden {
 }
 
 .banner {
-  background:  #1a1915 url(../img/baner-desctop-tablet.png) no-repeat center;
+  background: #1a1915 url(../img/baner-desctop-tablet.png) no-repeat center;
   background-size: cover;
   width: 100%;
   min-height: 540px;
@@ -61,19 +61,20 @@ input[type="radio"].visually-hidden {
   font-size: 1.4rem;
   font-weight: 700;
   background: none;
-  border:none;
+  border: none;
   padding: 1rem 2rem;
   cursor: pointer;
   outline: none;
-  transition: .3s;
+  transition: 0.3s;
   border: 2px solid transparent;
   border-radius: 20px;
+  outline: none;
 }
 
 .log-in:hover,
 .log-in:focus,
 .sign-up:hover,
-.sign-up:focus  {
+.sign-up:focus {
   border-color: #ffffff;
 }
 
@@ -82,7 +83,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #ffffff;
   font-size: 2.8rem;
   font-weight: 700;
@@ -94,7 +95,7 @@ input[type="radio"].visually-hidden {
 
 .subtitle {
   color: #ffffffb3;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.8rem;
   font-weight: 300;
   text-align: center;
@@ -113,9 +114,8 @@ input[type="radio"].visually-hidden {
 
 .bg-red:hover,
 .bg-red:focus {
-  border-color:#ffffff;
+  border-color: #ffffff;
 }
-
 
 /*---------------------- partners section------------------ */
 .partners-title {
@@ -128,16 +128,12 @@ input[type="radio"].visually-hidden {
 }
 
 .partners-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-align: center;
+  margin-bottom: 4rem;
 }
 
-.partners-item {
-  width: 218px;
+.partners-card {
   margin: 0 auto;
-  margin-bottom: 3rem;
+  text-align: center;
 }
 
 .img {
@@ -163,17 +159,17 @@ input[type="radio"].visually-hidden {
   bottom: -4px;
 }
 
-.partners-item:nth-child(2) .icon::after {
+.partners-list [class*="col-"]:nth-child(2) .icon::after {
   background-color: #ffa507;
   background-image: url(../img/icon/icon-2.svg);
 }
 
-.partners-item:nth-child(3) .icon::after {
+.partners-list [class*="col-"]:nth-child(3) .icon::after {
   background-color: #1cd7ad;
   background-image: url(../img/icon/icon-3.svg);
 }
 
-.partners-item:nth-child(4) .icon::after {
+.partners-list [class*="col-"]:nth-child(4) .icon::after {
   background-color: #4e73db;
   background-image: url(../img/icon/icon-4.svg);
 }
@@ -188,7 +184,7 @@ input[type="radio"].visually-hidden {
 
 .disc {
   color: #666666;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.4rem;
   font-weight: 300;
 }
@@ -210,7 +206,19 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
 }
 
-@media (min-width:768px) {
+@media (max-width: 767px) {
+  .partners-list [class*="col-"]:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .partners-list [class*="col-"]:not(:nth-last-child(-n+2)) {
+    margin-bottom: 3rem;
+  }
+}
+
+@media (min-width: 767px) {
   .banner {
     min-height: 700px;
   }
@@ -229,12 +237,14 @@ input[type="radio"].visually-hidden {
     margin-bottom: 4rem;
     font-size: 5.2rem;
   }
-  
+
   .subtitle {
     margin-bottom: 3.4rem;
     padding: 0;
     font-size: 2.4rem;
   }
 
+  .partners-title {
+    margin-bottom: 3.2rem;
+  }
 }
-
