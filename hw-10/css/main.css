@@ -50,8 +50,7 @@ header {
 .overlay {
   background-image: -webkit-gradient(
     linear,
-    left bottom,
-    left top,
+    left bottom, left top,
     from(rgba(252, 227, 138, 0.9)),
     to(rgba(243, 129, 129, 0.9))
   );
@@ -63,7 +62,7 @@ header {
   min-height: 1000px;
 }
 
-header .container {
+header .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,6 +73,7 @@ header .container {
   -ms-flex-align: center;
   align-items: center;
   padding-top: 36px;
+  margin-bottom: 164px;
 }
 
 .nav {
@@ -153,39 +153,47 @@ header .container {
   border-bottom: 3px solid #fce38a;
 }
 
-.logo {
-  -webkit-animation: logo-appear 0.5s linear;
-  animation: logo-appear 0.5s linear;
+ .main-title h1 {
+  width: 70%;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 150px;
+  text-transform: uppercase;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1;
+  margin-bottom: 90px;
 }
 
-@-webkit-keyframes logo-appear {
-  0% {
-    -webkit-transform: translateY(-200px);
-    transform: translateY(-200px);
-    opacity: 0;
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    opacity: 1;
-  }
+.main-title span {
+  display: block;
+  color: #ffffff;
+  font-family: "Kaushan Script";
+  font-size: 72px;
+  font-weight: 400;
+  margin-bottom: 42px;
+  text-transform: none;
 }
 
-@keyframes logo-appear {
-  0% {
-    -webkit-transform: translateY(-200px);
-    transform: translateY(-200px);
-    opacity: 0;
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-    opacity: 1;
-  }
+.main-title__btn--white {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.main-title__btn--white:hover {
+  color: #f38181;
+  border-color: #f38181;
 }
 
 /* ----------------SERVICES SECTION---------------------- */
@@ -301,7 +309,7 @@ header .container {
 }
 
 .desc-width {
-  width: 940px;
+  max-width: 940px;
   margin: 0 auto;
   margin-bottom: 92px;
 }
@@ -365,8 +373,7 @@ header .container {
   height: 470px;
   background-image: -webkit-gradient(
     linear,
-    left bottom,
-    left top,
+    left bottom, left top,
     from(rgba(252, 227, 138, 0.9)),
     to(rgba(243, 129, 129, 0.9))
   );
