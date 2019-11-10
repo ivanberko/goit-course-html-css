@@ -62,7 +62,7 @@ header {
   min-height: 1000px;
 }
 
-header .row {
+.container.row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,7 +76,7 @@ header .row {
   margin-bottom: 164px;
 }
 
-.nav {
+.site-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -89,7 +89,7 @@ header .row {
   min-width: 620px;
 }
 
-.site-nav {
+.site-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +104,7 @@ header .row {
   width: 80%;
 }
 
-.site-nav-item a {
+.site-menu__link {
   display: block;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
@@ -147,32 +147,41 @@ header .row {
   fill: #fce38a;
 }
 
-.site-nav-item a:hover,
-.site-nav-item a:focus {
+.site-menu__link:hover,
+.site-menu__link:focus {
   color: #fce38a;
   border-bottom: 3px solid #fce38a;
-}
+} 
 
- .main-title h1 {
-  width: 70%;
+.site-title {
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 150px;
   text-transform: uppercase;
-  margin: 0 auto;
   text-align: center;
   line-height: 1;
+}
+
+.site-title__main {
+  max-width: 840px;
+  margin: 0 auto;
   margin-bottom: 90px;
 }
 
-.main-title span {
+.site-title__main--huge {
+  font-size: 150px;
+}
+
+.site-title__tagline {
   display: block;
   color: #ffffff;
   font-family: "Kaushan Script";
-  font-size: 72px;
   font-weight: 400;
-  margin-bottom: 42px;
   text-transform: none;
+}
+
+.site-title__tagline--big {
+  font-size: 72px;
+  margin-bottom: 42px;
 }
 
 .main-title__btn--white {
@@ -202,28 +211,19 @@ header .row {
   margin-bottom: 92px;
 }
 
-.section-title {
-  text-align: center;
-}
-
-.section-title h2 span {
+.site-title__tagline--small {
   color: #333333;
-  font-family: "Kaushan Script";
   font-size: 24px;
-  font-weight: 400;
   margin-bottom: 22px;
-  text-transform: none;
 }
 
-.section-title h2 {
+.site-title__section {
   color: #333333;
-  font-family: "Montserrat", sans-serif;
   font-size: 30px;
-  text-transform: uppercase;
-  margin-bottom: 66px;
+  margin-bottom: 56px;
 }
 
-.section-title h2::after {
+.site-title__section::after {
   content: "";
   display: block;
   width: 60px;
@@ -288,7 +288,6 @@ header .row {
 .item-title {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   text-transform: uppercase;
   color: #333333;
   margin-bottom: 20px;
@@ -309,9 +308,10 @@ header .row {
 }
 
 .desc-width {
-  max-width: 940px;
+  max-width: 954px;
   margin: 0 auto;
   margin-bottom: 92px;
+  text-align: center;
 }
 
 .team-list {
@@ -321,21 +321,18 @@ header .row {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   list-style: none;
   text-align: center;
 }
 
-.team-list-item {
-  width: 380px;
+.team-list-item:not(:last-child) {
+  padding-right: 15px;
 }
 
 .item-name {
   color: #333333;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 400;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
@@ -369,8 +366,8 @@ header .row {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 380px;
-  height: 470px;
+  width: 100%;
+  height: 100%;
   background-image: -webkit-gradient(
     linear,
     left bottom, left top,
@@ -462,7 +459,7 @@ footer .container {
   color: #333333;
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .copy a {
