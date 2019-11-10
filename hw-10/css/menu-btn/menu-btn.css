@@ -1,0 +1,28 @@
+.menu-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 13%;
+  flex-basis: 13%;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.menu-btn__cart,
+.menu-btn__search {
+  width: 18px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.menu-btn__icon {
+  fill: #ffffff;
+}
+
+.menu-btn__icon:hover,
+.menu-btn__icon:focus {
+  fill: #fce38a;
+}

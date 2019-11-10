@@ -1,0 +1,52 @@
+.site-title {
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1;
+}
+
+.site-title__main {
+  max-width: 840px;
+  margin: 0 auto;
+  margin-bottom: 90px;
+}
+
+.site-title__main--huge {
+  font-size: 150px;
+}
+
+.site-title__tagline {
+  display: block;
+  color: #ffffff;
+  font-family: "Kaushan Script";
+  font-weight: 400;
+  text-transform: none;
+}
+
+.site-title__tagline--big {
+  font-size: 72px;
+  margin-bottom: 42px;
+}
+
+.site-title__tagline--small {
+  color: #333333;
+  font-size: 24px;
+  margin-bottom: 22px;
+}
+
+.site-title__section {
+  color: #333333;
+  font-size: 30px;
+  margin-bottom: 56px;
+}
+
+.site-title__section::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #f38181;
+  margin: 0 auto;
+  margin-top: 42px;
+}

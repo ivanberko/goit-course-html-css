@@ -1,0 +1,20 @@
+.main-title__btn--white {
+  display: block;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 3px solid #ffffff;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  padding: 10px 32px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.main-title__btn--white:hover {
+  color: #f38181;
+  border-color: #f38181;
+}

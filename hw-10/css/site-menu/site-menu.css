@@ -1,0 +1,34 @@
+.site-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 80%;
+}
+
+.site-menu__link {
+  display: block;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding-bottom: 12px;
+  border-bottom: 3px solid #f3818100;
+  -webkit-transition: color 0.2s linear, border-bottom 0.2s linear;
+  transition: color 0.2s linear, border-bottom 0.2s linear;
+}
+
+.site-menu__link:hover,
+.site-menu__link:focus {
+  color: #fce38a;
+  border-bottom: 3px solid #fce38a;
+}
