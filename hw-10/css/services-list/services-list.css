@@ -21,28 +21,31 @@
   display: block;
   width: 32px;
   height: 32px;
-  background-image: url(../../img/servise-svg/ALARM.svg);
   position: absolute;
   left: 0px;
 }
 
-.services-list__item:nth-child(2)::before {
+.services-list__icon--alarm::before {
+  background-image: url(../../img/servise-svg/ALARM.svg);
+}
+
+.services-list__icon--line::before {
   background-image: url(../../img/servise-svg/LINE_GRAPH.svg);
 }
 
-.services-list__item:nth-child(3)::before {
+.services-list__icon--computer::before {
   background-image: url(../../img/servise-svg/COMPUTER.svg);
 }
 
-.services-list__item:nth-child(4)::before {
+.services-list__icon--book::before {
   background-image: url(../../img/servise-svg/BOOK_2.svg);
 }
 
-.services-list__item:nth-child(5)::before {
+.services-list__icon--home::before {
   background-image: url(../../img/servise-svg/HOME.svg);
 }
 
-.services-list__item:nth-child(6)::before {
+.services-list__icon--image::before {
   background-image: url(../../img/servise-svg/IMAGE.svg);
 }
 

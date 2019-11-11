@@ -72,7 +72,7 @@ header {
   min-height: 1000px;
 }
 
-.container.row {
+.header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
