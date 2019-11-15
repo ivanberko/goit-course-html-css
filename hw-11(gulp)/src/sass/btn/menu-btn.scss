@@ -1,5 +1,5 @@
 .menu-btn {
-  @include flex-between();
+  @include flex-aligning();
   flex-basis: 13%;
 }
 

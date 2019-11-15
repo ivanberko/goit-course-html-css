@@ -1,6 +1,6 @@
 .site-menu {
   @extend %list;
-  @include flex-between();
+  @include flex-aligning();
   flex-wrap: wrap;
   width: 80%;
 }

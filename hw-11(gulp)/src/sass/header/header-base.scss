@@ -19,7 +19,7 @@
 }
 
 .header__container {
-  @include flex-between();
+  @include flex-aligning();
   padding-top: sizeRem(36);
   margin-bottom: sizeRem(164);
 }
