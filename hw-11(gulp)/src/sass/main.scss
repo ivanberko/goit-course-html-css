@@ -1,31 +1,22 @@
+// HELPERS
+@import 'helpers/vars.scss';
+@import 'helpers/placeholder.scss';
+@import 'helpers/mixin.scss';
+@import 'helpers/function.scss';
 
+
+// BASE
 @import 'normalize.scss';
 @import 'base.scss';
 
-header {
-  min-height: 1000px;
-  margin-bottom: 46px;
-}
+// HEADER
+@import 'header/header-base.scss';
+@import 'header/site-nav.scss';
+@import 'header/site-menu.scss';
 
-.banner {
-  background-image: url(../images/main-bg-min.png);
-  background-size: cover;
-  background-position: center;
-}
 
-.overlay {
-  background-image: linear-gradient(
-    to top,
-    rgba(252, 227, 138, 0.9) 0%,
-    rgba(243, 129, 129, 0.9) 100%
-  );
-  min-height: 1000px;
-}
+@import 'btn/menu-btn.scss';
+@import 'btn/main-title__btn.scss';
 
-.header__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-top: 36px;
-  margin-bottom: 164px;
-}
+@import 'site-title.scss';
+
