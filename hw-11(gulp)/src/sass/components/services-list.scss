@@ -42,6 +42,28 @@
     position: absolute;
     left: 0px;
   }
+
+  &:last-child {
+    @media (max-width: 768px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:nth-last-child(-n + 2) {
+    @media (min-width: 767px) and (max-width: 1023px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  &:nth-last-child(-n + 3) {
+    @media (min-width: 1024px) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    width: 60%;
+  }
 }
 
 .services-list__title {

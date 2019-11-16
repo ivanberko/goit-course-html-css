@@ -14,6 +14,14 @@
 
 .site-title__main--huge {
   font-size: sizeRem(150);
+
+  @media (max-width: 768px) {
+    font-size: sizeRem(70);
+  }
+
+  @media (min-width: 767px) and (max-width: 1023px) {
+    font-size: sizeRem(100);
+  }
 }
 
 .site-title__tagline {
@@ -27,6 +35,10 @@
 .site-title__tagline--big {
   font-size: sizeRem(72);
   margin-bottom: sizeRem(42);
+
+  @media (max-width: 768px) {
+    font-size: sizeRem(52);
+  }
 }
 
 .site-title__tagline--small {

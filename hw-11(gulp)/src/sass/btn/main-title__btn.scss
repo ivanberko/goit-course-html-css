@@ -14,3 +14,9 @@
     border-color: $accent-lt-red;
   }
 }
+
+.main-title__btn{
+  @media (max-width: 768px) {
+    padding-bottom: sizeRem(40);
+  }
+}
